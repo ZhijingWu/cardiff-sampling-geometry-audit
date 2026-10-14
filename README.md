@@ -1,6 +1,6 @@
 # Cardiff sampling and geometry audit
 
-Independent, inference-only Porto pilot by Zhijing Wu, Sichuan University. Publication package for ZhijingWu/cardiff-sampling-geometry-audit. Public availability is verified separately after upload.
+Independent, inference-only Porto pilot by Zhijing Wu, Sichuan University. Public aggregate evidence package: https://github.com/ZhijingWu/cardiff-sampling-geometry-audit .
 
 With 64 conditions and seeds 0/1/2, Stage 1 latents were fixed per seed while GPS sampling intervals 20 and 50 were compared. The median of 24 paired-batch speedups was **2.503015x**, conditional 95% bootstrap interval **[2.431523, 2.692350]x**. Median length and pooled p95 step-distance point estimates passed frozen ±10% margins. Turning-tail and individual-path sensitivity remain; road validity was not evaluated.
 
