@@ -1,0 +1,192 @@
+{
+  "n_conditions": 64,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "trajectories_per_interval": 192,
+  "intervals": {
+    "20": {
+      "gps_seconds_total": 41.79714127629995,
+      "seconds_per_trajectory": 0.21769344414739558,
+      "median_batch_seconds": 1.682858346030116,
+      "peak_allocated_bytes": 163037184,
+      "peak_reserved_bytes": 176160768,
+      "finite_coordinate_fraction": 1.0,
+      "nonfinite_trajectories": 0,
+      "out_of_region_point_fraction": 0.00016276041666666666,
+      "median_cumulative_length_m": 3394.025610670541,
+      "consecutive_distance_m": {
+        "0.05": 3.164301288040643,
+        "0.5": 49.07183823856818,
+        "0.95": 163.04787364982062,
+        "0.99": 258.5814802095166,
+        "1.0": 675.1798610643879
+      },
+      "turning_angle_deg": {
+        "median": 8.53601679573214,
+        "p95": 62.224177201877524
+      },
+      "undefined_distance_count": 0,
+      "undefined_turn_count": 0
+    },
+    "50": {
+      "gps_seconds_total": 16.702401493676007,
+      "seconds_per_trajectory": 0.0869916744462292,
+      "median_batch_seconds": 0.6745307524688542,
+      "peak_allocated_bytes": 163021824,
+      "peak_reserved_bytes": 176160768,
+      "finite_coordinate_fraction": 1.0,
+      "nonfinite_trajectories": 0,
+      "out_of_region_point_fraction": 0.0,
+      "median_cumulative_length_m": 3377.721686881604,
+      "consecutive_distance_m": {
+        "0.05": 4.028444761613176,
+        "0.5": 49.15289786924292,
+        "0.95": 162.19259808624355,
+        "0.99": 251.9942916693294,
+        "1.0": 414.6799503820942
+      },
+      "turning_angle_deg": {
+        "median": 8.002619100874076,
+        "p95": 54.17982592186015
+      },
+      "undefined_distance_count": 0,
+      "undefined_turn_count": 0
+    }
+  },
+  "seed_level": [
+    {
+      "seed": 0,
+      "seconds_per_trajectory": {
+        "20": 0.23603147742687725,
+        "50": 0.09039709692297038
+      },
+      "speedup": 2.6110515211346397,
+      "median_length_ratio": 0.9743135346717575,
+      "pooled_p95_step_ratio": 1.03977479920082,
+      "out_of_region20_fraction": 0.000244140625,
+      "out_of_region50_fraction": 0.0,
+      "region_difference_pp": -0.0244140625
+    },
+    {
+      "seed": 1,
+      "seconds_per_trajectory": {
+        "20": 0.21283120597945526,
+        "50": 0.0840091789723374
+      },
+      "speedup": 2.5334279965947113,
+      "median_length_ratio": 0.9465083426769948,
+      "pooled_p95_step_ratio": 0.925734061177498,
+      "out_of_region20_fraction": 0.000244140625,
+      "out_of_region50_fraction": 0.0,
+      "region_difference_pp": -0.0244140625
+    },
+    {
+      "seed": 2,
+      "seconds_per_trajectory": {
+        "20": 0.20421764903585427,
+        "50": 0.08656874744337983
+      },
+      "speedup": 2.359022800571563,
+      "median_length_ratio": 1.0259346590131466,
+      "pooled_p95_step_ratio": 1.0337255886153502,
+      "out_of_region20_fraction": 0.0,
+      "out_of_region50_fraction": 0.0,
+      "region_difference_pp": 0.0
+    }
+  ],
+  "median_paired_batch_speedup": 2.5030150121285453,
+  "paired_batch_speedups": [
+    2.5550341225113797,
+    2.0643830878738285,
+    3.21636155896812,
+    2.8065894057650875,
+    2.4315232321054667,
+    3.069550651045858,
+    2.239346276151126,
+    2.60707140670966,
+    2.589667441896721,
+    2.1239524510030208,
+    2.743133640041758,
+    2.096077401395469,
+    2.443756021307142,
+    2.6923499512511992,
+    2.9811259988796097,
+    2.7734666052397623,
+    2.01089267707474,
+    2.450995901745711,
+    2.4240317445358306,
+    2.612580775667614,
+    2.3867634546648575,
+    2.082220620000478,
+    2.774557152184924,
+    2.266764288524605
+  ],
+  "metric_protocol": {
+    "geodesic": "geographiclib WGS84 ellipsoidal inverse",
+    "turning": "unsigned angles in local equirectangular coordinates; undefined zero-length turns counted",
+    "region": "preprocessing box containment; nonfinite points counted as out; not road validity",
+    "timing": "CUDA synchronized stage-only wall time; writes/setup excluded",
+    "uncertainty": "2000 paired attribute-ID bootstrap resamples retaining all three seeds; no model reruns"
+  },
+  "paired_uncertainty": {
+    "median_length_ratio": {
+      "estimate": 0.9951962873415926,
+      "ci95": [
+        0.9416536218400323,
+        1.0555655191227609
+      ]
+    },
+    "pooled_p95_step_ratio": {
+      "estimate": 0.994754451288252,
+      "ci95": [
+        0.9461001948394557,
+        1.0255986137411017
+      ]
+    },
+    "out_of_region_difference_pp": {
+      "estimate": -0.016276041666666664,
+      "ci95": [
+        -0.048828125,
+        0.0
+      ]
+    },
+    "median_paired_length_difference_m": {
+      "estimate": -51.8124221739572,
+      "ci95": [
+        -72.26021027339903,
+        -27.079783024579683
+      ]
+    }
+  },
+  "frozen_criteria": {
+    "strict_loading": true,
+    "smoke_test": true,
+    "repeatability": true,
+    "median_speedup_ge_1p5": true,
+    "all_coordinates_finite": true,
+    "region_increase_le_2pp": true,
+    "median_length_within_10pct": true,
+    "pooled_p95_step_within_10pct": true
+  },
+  "all_frozen_point_criteria_pass": true,
+  "diagnostic_recomputation_exact": true,
+  "timing_uncertainty": {
+    "median_paired_batch_speedup": 2.5030150121285453,
+    "ci95": [
+      2.4315232321054667,
+      2.6923499512511992
+    ],
+    "bootstrap_unit": "8 paired batch positions, retaining all 3 seeds; 2000 resamples; conditional descriptive interval"
+  },
+  "turning_tail_exploratory": {
+    "p95_ratio": 0.8707198448937522,
+    "ci95": [
+      0.8052933900825758,
+      0.9240651616544305
+    ],
+    "status": "descriptive/exploratory; no frozen success threshold; no new generation"
+  }
+}

@@ -1,0 +1,21 @@
+Cardiff sampling and geometry audit
+Original pilot analysis, prose, aggregate figure and verification code:
+Copyright (c) 2026 Zhijing Wu. See LICENSE for component-specific grants.
+
+This independent study builds on:
+Baoshen Guo, Zhiqing Hong, Junyi Li, Shenhao Wang and Jinhua Zhao.
+Leveraging the Spatial Hierarchy: Coarse-to-fine Trajectory Generation via
+Cascaded Hybrid Diffusion. https://arxiv.org/abs/2507.13366v1
+Official code: https://github.com/urban-mobility-generation/Cardiff
+Pinned revision: 1138b1ef0646c18e878608a848dafca018b8a888
+
+The copied original Porto parameter JSONs are upstream software configuration,
+Copyright (c) 2025 urban-mobility-generation, under the MIT License retained
+in notices/Cardiff-MIT-LICENSE.txt. They are not relicensed as applicant work.
+Embedded font terms: notices/Latin-Modern-fonts.txt and DejaVu-fonts.txt.
+No original model weights, dataset, raw coordinates, latent conditions,
+road geometry or private report/log is included.
+
+The figure is an original pilot latency/speedup plot; it includes no map
+tiles or raw paths. Referencing the paper/code does not imply author
+affiliation, endorsement or supervision. See docs/LIMITATIONS.md.

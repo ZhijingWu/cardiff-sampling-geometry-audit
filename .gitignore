@@ -1,0 +1,14 @@
+_build/
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.pth
+*.pt
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.zip
+.env

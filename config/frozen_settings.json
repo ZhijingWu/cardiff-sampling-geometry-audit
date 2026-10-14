@@ -1,0 +1,74 @@
+{
+  "revision": "1138b1ef0646c18e878608a848dafca018b8a888",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "conditions": 64,
+  "max_smoke_conditions": 8,
+  "stage1_interval": 20,
+  "stage2_intervals": [
+    20,
+    50
+  ],
+  "noise_level": 0.2,
+  "cond_scale": 3.0,
+  "effective_eta": 1,
+  "precision": "float32",
+  "criteria": {
+    "minimum_median_speedup": 1.5,
+    "finite_coordinate_fraction_each": 1.0,
+    "max_out_of_box_increase_percentage_points": 2,
+    "median_path_length_ratio_range": [
+      0.9,
+      1.1
+    ],
+    "pooled_p95_consecutive_distance_ratio_range": [
+      0.9,
+      1.1
+    ]
+  },
+  "region_lon_lat": [
+    -8.69,
+    41.14,
+    -8.55,
+    41.19
+  ],
+  "mean_lon_lat": [
+    -8.619011,
+    41.15872626
+  ],
+  "std_lon_lat": [
+    0.02382058,
+    0.01060059
+  ],
+  "condition_rows": "first 64 valid rows, original indices 0..63",
+  "measurement_batch_size": 8,
+  "stage1_shape_per_seed": [
+    64,
+    32,
+    128
+  ],
+  "gps_shape_per_seed": [
+    64,
+    2,
+    64
+  ],
+  "pairing": "restore complete pre-call RNG state; advance subsequent batches from interval-20 post-call state",
+  "measurement_order": "alternate intervals by batch",
+  "timing": "CUDA synchronized GPS-only wall time; excludes setup, writes, Stage 1",
+  "precision_details": "FP32, no autocast, TF32 disabled",
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 3090, 24 GB",
+    "python": "3.11.2",
+    "torch": "2.5.1+cu124",
+    "cuda": "12.4",
+    "driver": "570.133.07"
+  },
+  "intentional_clean_inference_conditioning": true,
+  "sampler_changed": false,
+  "conditioning_note": "Original helper supplies clean Stage 1 latents with auxiliary noise time 200 and consumes an unused augmentation draw; no reinterpretation or fix.",
+  "timing_bootstrap": "2000 resamples of 8 paired batch positions retaining 3 seeds; RNG seed 20261014",
+  "geometry_bootstrap": "2000 resamples of 64 attribute IDs retaining 3 seeds; RNG seed 20261013"
+}
